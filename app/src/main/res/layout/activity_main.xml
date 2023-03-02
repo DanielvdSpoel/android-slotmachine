@@ -2,95 +2,54 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constrainedLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/timeView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
-        android:text="0"
-        android:textSize="96sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <Button
-        android:id="@+id/upButon"
+        android:id="@+id/runButton"
         android:layout_width="200dp"
         android:layout_height="60dp"
-        android:layout_marginTop="24dp"
-        android:text="Up"
+        android:layout_marginBottom="100dp"
+        android:text="Run!"
         android:textSize="24sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/speedValueText" />
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:id="@+id/downButton"
-        android:layout_width="200dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="8dp"
-        android:text="Down"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/upButon" />
-
-    <Button
-        android:id="@+id/zeroButton"
-        android:layout_width="200dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="8dp"
-        android:text="Zero"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/downButton" />
-
-    <TextView
-        android:id="@+id/SpeedLabel"
+    <ImageView
+        android:id="@+id/leftSlotView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="Speed in miliseconds"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/timeView" />
 
-    <SeekBar
-        android:id="@+id/speedSeekBar"
-        android:layout_width="350dp"
-        android:layout_height="25dp"
-        android:layout_marginTop="8dp"
-        android:max="5000"
-        android:progress="500"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.518"
+        android:layout_marginTop="250dp"
+        app:layout_constraintEnd_toStartOf="@+id/middleSlotView"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/SpeedLabel" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cherry" />
 
-    <TextView
-        android:id="@+id/speedValueText"
+    <ImageView
+        android:id="@+id/middleSlotView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="100 ms"
-        android:textSize="16sp"
-        android:textStyle="italic"
+        android:layout_marginTop="250dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/speedSeekBar" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cherry" />
+
+    <ImageView
+        android:id="@+id/rightSlotView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="250dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/middleSlotView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cherry" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
