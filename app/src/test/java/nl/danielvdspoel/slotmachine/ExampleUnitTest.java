@@ -1,4 +1,4 @@
-package nl.danielvdspoel.timer;
+package nl.danielvdspoel.slotmachine;
 
 import org.junit.Test;
 

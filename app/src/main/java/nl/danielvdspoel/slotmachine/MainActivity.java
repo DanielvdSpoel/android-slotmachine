@@ -1,4 +1,4 @@
-package nl.danielvdspoel.timer;
+package nl.danielvdspoel.slotmachine;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;

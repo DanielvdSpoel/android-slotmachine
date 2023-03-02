@@ -1,4 +1,4 @@
-package nl.danielvdspoel.timer;
+package nl.danielvdspoel.slotmachine;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("nl.danielvdspoel.timer", appContext.getPackageName());
+        assertEquals("nl.danielvdspoel.slotmachine", appContext.getPackageName());
     }
 }
